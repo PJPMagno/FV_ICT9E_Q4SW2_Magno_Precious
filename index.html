@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Q4 Seatwork2</title>
+	<style>
+		div{
+			border: ;
+		}
+
+		body{
+			font-family: serif;
+		}
+
+		#box{
+        background-color: lightseagreen;
+        border: 5px solid black;
+    }
+
+
+	</style>
+</head>
+<body>
+	<center>
+		<div class="col-md-6" id="box">
+			<form class="form-group">
+				<label>Enter value for X</label>
+				<input type="number" class="form-control" id="numX">
+				<label>Enter value for Y</label>
+				<input type="number" class="form-control" id="numY">
+				<br>
+				<details ontoggle="message()">
+					<summary>Click here</summary>
+					<i>Click the buttons below to calculate.</i>
+				</details>
+				<br>
+				<button class="btn btn-info" onclick="Add()">Add</button>
+					<button class="btn btn-warning" onclick="Subtract()">Subtract</button>
+						<button class="btn btn-danger" onclick="Multiply()">Multiply</button>
+						<button class="btn btn-success" onclick="Divide()">Divide</button>
+
+
+			</form>
+		</div>
+	</center>
+
+<script type="text/javascript">
+	function Add(){
+		var num1 = document.getElementById("numX").value;
+		var num2 = document.getElementById("numY").value;
+		var sum = Number(num1) + Number(num2);
+
+		 alert(sum);
+	}
+
+	function Subtract(){
+		var num1 = document.getElementById("numX").value;
+		var num2 = document.getElementById("numY").value;
+		var subtract = Number(num1) - Number(num2);
+
+		 alert(subtract);
+	}
+
+	function Multiply(){
+		var num1 = document.getElementById("numX").value;
+		var num2 = document.getElementById("numY").value;
+		var Multiply = Number(num1) * Number(num2);
+
+		 alert(Multiply);
+	}
+
+	function Divide(){
+		var num1 = document.getElementById("numX").value;
+		var num2 = document.getElementById("numY").value;
+		var divide = Number(num1) / Number(num2);
+
+		 alert(divide);
+	}
+</script>
+</body>
+</html>
